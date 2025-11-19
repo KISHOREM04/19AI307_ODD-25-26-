@@ -39,7 +39,7 @@ RegisterNumber:212222040079
 ```
 
 ## Sourcecode.java:
-```
+```java
 import java.util.Scanner;
 public class Countdown {
     public static void main(String[] args) {
@@ -64,6 +64,7 @@ public class Countdown {
 
 ## RESULT:
 Thus, the Java program demonstrating variables, data types, operators, and print statements was successfully executed.
+
 
 
 
