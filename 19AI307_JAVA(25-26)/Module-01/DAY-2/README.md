@@ -1,54 +1,40 @@
 # Ex.No:1(B) CONDITIONAL STATEMENT
 
 ## QUESTION:
-In a haunted house, lights turn on or off based on the hour of entry:
+Assign exam room based on:
 
-If the hour is even and between 2 and 6 (inclusive), lights flicker.
+Gender and subject code
 
-If the hour is odd and between 7 and 11, lights stay off.
+Male taking subject 1 or 2 → print("A")
 
-If the hour is 12, lights turn red.
+Female taking subject 1 → print("B")
 
-Otherwise, the house is dark.
+Female taking subject 2 → print("C")
 
-The program will print one of the following statements based on the input:
+All others → print("Admin")
 
-Lights flicker
-
-Lights off
-
-Lights red
-
-Dark house
+Except above any input should print ("Invalid")
+Write a java program that gets input from user for gender and subject, allot room based above conditions.
 
 ## AIM:
-To write a Java program that uses conditional statements to determine the state of lights in a haunted house based on the hour of entry.
+To write a Java program that reads gender and subject code from the user and assigns an exam room based on the given conditions, printing "Invalid" for incorrect inputs.
 
 ## ALGORITHM :
 1. Start the program.
+2. Import the necessary package `java.util` for reading user input.
+3. Create a Scanner object to accept user input.
+4. Read gender input from the user (e.g., "Male" or "Female").
+5. Read subject code from the user (integer such as 1 or 2).
+6. Convert gender input to a standard form (like uppercase or lowercase) for comparison.
+7. Check the conditions:
 
-2. Import the necessary package java.util.*.
-
-3. Create a Scanner object to read the hour input from the user.
-
-4. Read the hour as an integer.
-
-5. Check if the hour is even and between 2 and 6 (inclusive):
-
-6. Display “Lights flicker”.
-
-7. Else if the hour is odd and between 7 and 11:
-
-8. Display “Lights stay off”.
-
-9. Else if the hour is 12:
-
-10. Display “Lights turn red”.
- 
-11. Display “The house is dark”.
-
-12. End the program.
-
+   * If gender is male and subject is 1 or 2 → assign room **A**.
+   * If gender is female and subject is 1 → assign room **B**.
+   * If gender is female and subject is 2 → assign room **C**.
+   * If gender or subject does not match these rules but inputs are otherwise valid → assign **Admin**.
+   * Any invalid or unexpected input → print **Invalid**.
+8. Display the assigned room.
+9. End the program.
 ## PROGRAM:
  ```
 /*
@@ -59,7 +45,7 @@ RegisterNumber:212222040079
 ```
 
 ## Sourcecode.java:
-```
+```java
 import java.util.*;
 
 public class HauntedHouse
@@ -92,14 +78,15 @@ public class HauntedHouse
 ```
 
 ## OUTPUT:
-<img width="486" height="294" alt="Screenshot 2025-11-14 101547" src="https://github.com/user-attachments/assets/a64529b4-061c-436d-8ea4-55157b6e41b9" />
+<img width="258" height="176" alt="image" src="https://github.com/user-attachments/assets/dd8f11c4-272b-4e1a-93a3-f76f388b9dc5" />
+
 
 
 
 
 
 ## RESULT:
-Thus, the Java program to implement conditional statements for the haunted house lighting system was successfully executed.
+The program successfully reads the gender and subject code from the user and assigns the correct exam room according to the given rules. If the user inputs invalid values, the program displays "Invalid".
 
 
 
