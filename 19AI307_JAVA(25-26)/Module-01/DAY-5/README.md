@@ -2,23 +2,28 @@
 
 ## QUESTION:
 
-Write a Java program to calculate the power of a given number.
+Write a Java program to count the frequency of a given character in a string.
 
 
 ## AIM:
-To write a Java program to compute the power of a number using the Math.pow() function in Java.
+To write a Java program that counts how many times a specific character appears in a given string.
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Import the necessary package 'java.util'
-3.	Read the base value from the user.
-4. Read the exponent value from the user.
-5. Use the Math.pow(base, exponent) function to calculate the power.
-6. Display the result.
-7. Stop the program.
+1. Start the program.
+2. Import the necessary package `java.util` for reading user input.
+3. Create a Scanner object to read a string from the user.
+4. Read the character whose frequency needs to be counted.
+5. Initialize a counter variable to zero.
+6. Loop through each character of the string using a `for` loop.
+7. For every character in the loop:
+
+   * Compare it with the target character.
+   * If they match, increment the counter.
+8. After the loop ends, display the frequency count.
+9. End the program.
 
 ## PROGRAM:
- ```java
+ ```
 /*
 Program to implement a Strings and Math Function using Java
 Developed by: KISHORE M
@@ -28,20 +33,25 @@ RegisterNumber:212222040079
 
 ## SOURCE CODE:
 
-```
+```java
 import java.util.Scanner;
 
-public class PowerCalculator
-{
-    public static void main(String[] args) 
-    {
+public class Main {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double base = sc.nextDouble();
-        double exponent = sc.nextDouble();
+        String str = sc.nextLine();
+        char ch = sc.next().charAt(0);
 
-        double result = Math.pow(base, exponent);
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == ch) {
+                count++;
+            }
+        }
 
-        System.out.println(base + " raised to the power of " + exponent + " is: " + result);
+        System.out.println("Frequency of '" + ch + "' is: " + count);
+
+        sc.close();
     }
 }
 
@@ -52,12 +62,13 @@ public class PowerCalculator
 
 
 ## OUTPUT:
-<img width="784" height="208" alt="image" src="https://github.com/user-attachments/assets/9dfc2e16-5d9b-489b-8d3b-2a3917f0875d" />
+<img width="480" height="228" alt="image" src="https://github.com/user-attachments/assets/adc38118-f8bd-433e-805f-861f48b3a74e" />
+
 
 
 
 ## RESULT:
-Thus, the Java program to calculate the power of a given number using Math function was successfully executed.
+he program successfully counts and displays how many times the specified character appears in the given string.
 
 
 
