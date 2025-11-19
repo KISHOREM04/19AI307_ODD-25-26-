@@ -48,8 +48,8 @@ To implement the Observer Design Pattern where a Channel (Subject) notifies all 
  ```
 /*
 Program to implement a SOLID Principles in Java Program
-Developed by: 
-RegisterNumber:  
+Developed by: KISHORE M
+RegisterNumber: 212222040079
 */
 ```
 
@@ -136,3 +136,4 @@ public class prog {
 ## RESULT:
 The program successfully implements the Observer Pattern.
 Each time the channel uploads a new video, all registered subscribers automatically receive a notification and display a personalized message acknowledging the upload.
+
